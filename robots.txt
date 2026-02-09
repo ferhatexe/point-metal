@@ -1,0 +1,19 @@
+# 🤖 Point Metal A.Ş. Robots Configuration
+User-agent: *
+Allow: /
+
+# Özel ve gereksiz dizinler
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cache/
+
+# Query string'li URL'leri tarama (SPA + SEO için önemli)
+Disallow: /*?
+
+# (Google yok sayar ama zararsız)
+Crawl-delay: 5
+
+# Sitemap
+Sitemap: https://www.pointmetal.com.tr/sitemap.xml
